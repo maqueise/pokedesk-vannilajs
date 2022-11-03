@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.json" />
-  <script>navigator.serviceWorker.register("service-worker.js")</script>
   <title>Vite App</title>
 </head>
 
 <body>
   <div id="app">
     <header>
+      <img src="img/pokebola.png" />
       <h1>POKEDEX</h1>
     </header>
     <main>
+      <section class="search">
+        <input type="search" class="search-input">
+        <button class="search-btn">Localizar</button>
+      </section>
       <section>
-        <article class="card">
-          <img src="./img/charmander.svg" />
-          <img src="./img/fire.png" />
+        <article class="pokemon-card">
+          <div class="pokemon-image">
+            <img class="" src="./img/charmander.svg" />
+          </div>
+          <h2 class="pokemon-name">Charmander</h2>
+          <div class="pokemon-type-name">
+            <img class="pokemon-image-type" src="./img/fire.png" />
+            <h2>Fire</h2>
+          </div>
+        </article>
       </section>
     </main>
   </div>
