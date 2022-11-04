@@ -30,13 +30,28 @@ header{
   background:#121e2b;
   padding-left: 50px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   margin-bottom: 15px;
   color: white;
 }
+header nav{
+  display: flex;
+  gap: 25px;
+}
+header a{
+  color: #E8ECEF;
+  text-decoration: none;
+  font-weight: bold;
+}
 header img{
   height: 50px;
+}
+.cards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 .pokemon-card{
   width: 200px;
