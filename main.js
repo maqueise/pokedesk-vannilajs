@@ -17,12 +17,13 @@ function criarCard(pokemon) {
     card.className = 'pokemon-card'
     card.innerHTML = `
     <div class="pokemon-image">
-        <img class="" src="${pokemon.sprites.other.dream_world.front_default}" />
+        <img class="" src="${pokemon.sprites.versions['generation-v']['black-white'].animated.front_default}" />
     </div>
     <h2 class="pokemon-name">${pokemon.name}</h2>
-     <div class="pokemon-type-name">
-        <img class="pokemon-image-type" src="./img/fire.png" />
-        <h2>Fire</h2>
+    <div class="pokemon-type-name">
+        ${pokemon.types.map((type)=>
+            `<img class="pokemon-image-type" src="./img/${type.type.name}.png" />`
+        ).join('')}
     </div>  
     `
     let sectionCards = document.querySelector('.cards')
