@@ -14,15 +14,20 @@ btnLocalizar.addEventListener('click', function () {
 
 function criarCard(pokemon) {
     let card = document.createElement('article')
-    card.className = 'pokemon-card'
+    card.className = 'pokemon-card tilt-in-fwd-tr'
     card.innerHTML = `
     <div class="pokemon-image">
         <img class="" src="${pokemon.sprites.versions['generation-v']['black-white'].animated.front_default}" />
     </div>
     <h2 class="pokemon-name">${pokemon.name}</h2>
-    <div class="pokemon-type-name">
+    <div class="pokemon-types">
         ${pokemon.types.map((type)=>
-            `<img class="pokemon-image-type" src="./img/${type.type.name}.png" />`
+            `
+            <div class="type">
+                <img class="pokemon-image-type" src="./img/${type.type.name}.png" />
+                <h2>${type.type.name}</h2>
+            </div>
+            `
         ).join('')}
     </div>  
     `
