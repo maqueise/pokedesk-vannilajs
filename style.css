@@ -118,14 +118,17 @@ header img{
   border-radius: 5px;
   padding: 5px;
 }
+.bug{
+  background-color: #84c400;
+}
+.dark{
+  background: #5b5366;
+}
+.dragon{
+  background: #0070ca;
+}
 .electric{
   background: #fbd200;
-}
-.poison{
-  background-color: #b668cf;
-}
-.water{
-  background-color: #3393dd;
 }
 .fairy{
   background-color: #fb8aec;
@@ -136,17 +139,38 @@ header img{
 .fire{
   background-color: #ff983f;
 }
+.flying{
+  background:#8aabe4;
+}
+.ghost{
+  background: #4b6ab3;
+}
 .grass{
   background-color: #35c04a;
 }
-.bug{
-  background-color: #84c400;
+.ground{
+  background-color: #e97333;
+}
+.ice{
+  background: #4bd2c1;
 }
 .normal{
   background-color: #929ba3;
 }
-.ground{
-  background-color: #e97333;
+.poison{
+  background-color: #b668cf;
+}
+.psychic{
+  background: #ff6676;
+}
+.rock{
+  background: #c9b787;
+}
+.steel{
+  background: #598fa3;
+}
+.water{
+  background-color: #3393dd;
 }
 .search{
   width: 100%;
